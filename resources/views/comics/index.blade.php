@@ -12,7 +12,7 @@
         <div class="col-12 py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Tutti i comics</h2>
-                <a href="#" class="btn btn-primary">Aggiugni fumetto</a>
+                <a href="{{route('comics.create')}}" class="btn btn-primary">Aggiugni fumetto</a>
             </div>
         </div>
         <table class="table">
