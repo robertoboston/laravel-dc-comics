@@ -1,0 +1,131 @@
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+.bg-grey{
+    background-color: black
+}
+
+.card{
+    margin: 10px;
+    width: calc(100% / 6 - 20px);
+    background-color: black;
+    text-decoration: none;
+   
+}
+
+.title-card{
+    color: white;
+}
+
+.navbar{
+    width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+}
+
+.list li{
+    padding: 0 20px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.jumbo{
+    height: 40vh;
+    overflow: hidden;
+}
+
+.jumbo img{
+    height: initial;
+    width: 100%;
+    object-fit: cover;
+}
+
+.active{
+    border-bottom: 5px solid blue;
+}
+
+.container-home{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comics-card{
+    margin: 10px;
+}
+
+.container-single-card{
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.single-card{
+    position: absolute;
+    top: -300px;
+    border: 2px solid white;
+}
+
+.blue-band{
+    background-color: rgb(72, 78, 231);
+    height: 50px;
+    width: 100%;
+}
+
+.comic-title{
+    padding-top: 90px
+}
+
+.price-section{
+    height: 50px;
+    background-color: green;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.description{
+    margin-top: 40px;
+}
+
+.advertise{
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+}
+
+.footer{
+    background-image: url('../img/footer-bg.jpg');
+    height: 500px;
+    width: 100%;
+}
+
