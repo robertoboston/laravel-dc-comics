@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
+<div class="container-fluid g-0 jumbo">
+    <img class="img-jumbo" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+</div>
 <div class="p-5 mb-4">
     <h1 class="display-5 fw-bold">Dc Comics</h1>
     <p class="fs-4">Ecco i nostri fumetti</p>
@@ -30,7 +33,7 @@
                     <td>{{$comic['title']}}</td>
                     <td>{{$comic['type']}}</td>
                     <td>{{$comic['description']}}</td>
-                    <td>{{$comic['price']}}</td>
+                    <td>{{$comic['price']}}$</td>
                     <td>{{$comic['series']}}</td>
                     <td>
                      <a href="#" class="btn btn-info btn-sm btn-square mb-2" title="dettaglio comic">
