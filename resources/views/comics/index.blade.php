@@ -36,7 +36,7 @@
                     <td>{{$comic['price']}}$</td>
                     <td>{{$comic['series']}}</td>
                     <td>
-                     <a href="#" class="btn btn-info btn-sm btn-square mb-2" title="dettaglio comic">
+                     <a href="{{route('comics.show',['comic'=>$comic['id']])}}" class="btn btn-info btn-sm btn-square mb-2" title="dettaglio comic">
                         <i class="fas fa-eye"></i>
                         </a>
                         <a href="#" class="btn btn-warning btn-sm btn-square">
