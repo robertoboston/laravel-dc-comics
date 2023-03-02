@@ -3,7 +3,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController as PageController;
-use App\Http\Controllers\ComicController as ComicController;
+use App\Http\Controllers\ComicsController as ComicController;
+use App\Http\Controllers\ComicsController;
+use App\Models\Comic;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,32 +18,8 @@ use App\Http\Controllers\ComicController as ComicController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// })->name('homepage');
-
 Route::get('/',[PageController::class,'index'])->name('homepage');
 
-// Route::get('/comics',function(){
-//     $fumetti = config('db');
-   
-//     return view('comics',compact('fumetti'));
+Route::resource('comics',ComicsController::class);
 
-// })->name('fumetti');
 
-Route::get('/comics',[ComicController::class,'index'])->name('fumetti');
-
-// Route::get('/comics/{id}',function($id){
-//     $fumetti = config('db');
-//     $single = '';
-//     foreach($fumetti as $key => $item){
-//         if($key == $id){
-//             $single = $item;
-//         }
-//     };
-
-//     return view('detail_comics',compact('single'));
-
-// })->name('detail_comics');
-
-Route::get('/comics/{id}', [ComicController::class,'show'])->name('detail_comics');

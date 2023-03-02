@@ -25,8 +25,8 @@
                 <li class=" {{Route::currentRouteName() == 'homepage' ? 'active' : ''}}">
                     <a href="{{route('homepage')}}">Characters</a>
                 </li>
-                <li class=" {{Route::currentRouteName() == 'fumetti' ? 'active' : ''}}">
-                    <a href="{{route('fumetti')}}">Comics</a>
+                <li class=" {{Route::currentRouteName() == 'comics.index' ? 'active' : ''}}">
+                    <a href="{{route('comics.index')}}">Comics</a>
                 </li>
                 <li>
                     <a href="">Movies</a>
