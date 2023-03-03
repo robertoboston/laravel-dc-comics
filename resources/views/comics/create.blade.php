@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group mb-3">
                     <label class="control-label">Price</label>
-                    <input name="price" type="text" class="form-control" placeholder="Inserisci qui il prezzo">
+                    <input step="0.01" name="price" type="number" class="form-control" placeholder="Inserisci qui il prezzo">
                 </div>
                 <div class="form-group mb-3">
                     <label class="control-label">Image</label>
